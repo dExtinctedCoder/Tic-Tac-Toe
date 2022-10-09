@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="tic-tac.css">
+  <script src="tic-tac.js" defer></script>
+  <title>Tic Tac</title>
+</head>
+<body>
+  
+  <div class="page-control">
+    
+    <section class="score-board">
+      <div class="score-panel">
+        <label for="x-score">X</label>
+        <span id="x-score" class="x-score" name="x-score"></span>
+      </div>
+      <span>—</span>
+      <div class="score-panel">
+        <label for="circle-score">O</label>
+        <span id="circle-score" class="circle-score" name="circle-score"></span>
+      </div>
+    </section>
+    
+    <button id="changeTheme">🌙</button>
+    
+    <section class="timerBox">
+      <div id="timer"></div>
+    </section>
+    
+    <section class="board" id="board">
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+    </section>
+    
+    <section class="display-message" id="display-message">
+      <h2 class="message-text"></h2>
+      <button id="restart-btn">Restart!</button>
+    </section>
+    
+  </div>
+</body>
+</html>
