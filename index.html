@@ -11,6 +11,32 @@
 <body>
   
   <div class="page-control">
+
+    <div class="menuBox">
+      <div class="menu">
+        <span class="menu-btn"></span>
+      </div>
+    </div>
+
+    <aside>
+      <ul>
+        <li>
+          <label class="menu-item" for="username">Custom username <span class="caret">&dArr;</span></label>
+          <form class="action">
+            <input type="text" maxlength="7" name="username" id="username">
+            <input data-submit type="submit" value="Save">
+          </form>
+        </li>
+        <li>
+          <span class="menu-item">Set default theme <span class="caret">&dArr;</span></span>
+          <form class="action theme-options">
+            <label for="darkTM">Dark<input type="radio" name="theme" id="darkTM"></label>
+            <label for="lightTM">Light<input type="radio" name="theme" id="lightTM"></label>
+            <button class="setTheme" type="submit">Set</button>
+          </form>
+        </li>
+      </ul>
+    </aside>
     
     <section class="score-board">
       <div class="score-panel">
@@ -24,7 +50,7 @@
       </div>
     </section>
     
-    <button id="changeTheme">🌙</button>
+    <button id="changeTheme"></button>
     
     <section class="timerBox">
       <div id="timer"></div>
@@ -42,10 +68,15 @@
       <div class="cell" data-cell></div>
     </section>
     
-    <section class="display-message" id="display-message">
-      <h2 class="message-text"></h2>
-      <button id="restart-btn">Restart!</button>
+    <section class="records">
+      <div>Fastest Win</div>
+      <span class="fastestWin"></span>
     </section>
+    
+    <form class="display-message" id="display-message">
+      <h2 class="message-text"></h2>
+      <button autofocus type="submit" id="restart-btn">Restart!</button>
+    </form>
     
   </div>
 </body>
